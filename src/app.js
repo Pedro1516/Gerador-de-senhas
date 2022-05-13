@@ -2,7 +2,9 @@ const tela = document.querySelector('#exibir-senha')
 const btn = document.querySelector('#gerar')
 const tamanho = document.querySelector('#tamanho')
 const tipo = document.querySelectorAll('.tipo')
+const fieldset = document.querySelector('.selecao-tipo')
 const label = document.querySelector('.num')
+
 
 function gerarSenha(tamanho){
  tamanho = tamanho || 1
@@ -10,7 +12,7 @@ function gerarSenha(tamanho){
  let carcTemp = ''
 
 	const nums = ['1', '2', '3','4', '5','6','7','8','9','0']
-	const especiais = ['*', ' ', '&', '_', '-', '#', '•', ')', '%', '$', '"', '<', '>', ']']
+	const especiais = ['*', ' ', '&', '_', '-', '#', '•', '(', ')', '%', '$', '"', '<', '>', ']', '[', '{', '}', '°', '|', '/', '*', '+', '?', '!', '@']
 	const letras = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 	const tiposCarc = []
 	
@@ -57,11 +59,19 @@ btn.addEventListener("click", () => {
   }
 })
 
+fieldset.addEventListener("input", () => {
+  if(testeCheckbox()){
+    fieldset.classList.remove('invalido')
+  }
+  else{
+    fieldset.classList.add('invalido')
+}
+})
 
 tamanho.addEventListener("change", () => {
   if(!tamanho.validity.valid || tamanho == ''){
-   label.classList.toggle('invalido')
-   tamanho.classList.toggle('invalido')
+   label.classList.add('invalido')
+   tamanho.classList.add('invalido')
   }
   else{
    label.classList.remove('invalido')
