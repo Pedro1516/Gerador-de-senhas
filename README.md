@@ -5,6 +5,9 @@
 <a href="https://geradordesenhas-six.vercel.app">Acesse aqui</a>
 </h4>
 
+<img src="./screenshots/gerador.gif" alt="Imagem demonstrativa do site"/>
+<img src="./screenshots/gerador.jpg" alt="Imagem demonstrativa do site"/>
+
 <h4>🖱️Tecnologias</h4>
 <ul>
    <li>HTML</li>
@@ -13,4 +16,4 @@
 </ul>
 
 <h4>:mailbox: Autor</h4>
-<p>Feito Pedro Freitas</p>
+<p>Feito por Pedro Freitas</p>
