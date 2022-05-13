@@ -5,8 +5,16 @@
 <a href="https://geradordesenhas-six.vercel.app">Acesse aqui</a>
 </h4>
 
-<img src="./screenshots/gerador.gif" alt="Imagem demonstrativa do site"/>
-<img src="./screenshots/gerador.jpg" alt="Imagem demonstrativa do site"/>
+<table>
+<tr>
+  <td>
+    <img src="./screenshots/gerador.gif" alt="Imagem demonstrativa do site" width="200px" />
+  </td>
+  <td>
+   <img src="./screenshots/gerador.jpg" alt="Imagem demonstrativa do site" width="250px" />
+  </td>
+</tr>
+</table>
 
 <h4>🖱️Tecnologias</h4>
 <ul>
