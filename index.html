@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="main.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="container">
+      <span id="exibir-senha">Senha Aqui</span>
+     
+     <div class="tamanho">
+       <label for="tamanho" class="num">Tamanho da senha</label>
+      <input type="number" id="tamanho" value="8" max="25" min="1" required/>
+
+     </div>
+ 
+      <fieldset class="selecao-tipo">
+        <legend>
+          Tipo de senha (caracteres)
+        </legend>
+        
+        <div>
+         <input type="checkbox" name="tipo" id="especial" class="tipo" checked/>
+         <label for="especial">Especial</label>
+        </div>
+       <div>
+         <input type="checkbox" name="tipo" id="numeros" class="tipo"/>
+         <label for="numeros">Números</label>
+       </div> 
+       <div>
+         <input type="checkbox" name="tipo" id="letras" class="tipo"/>
+         <label for="letras">Letras</label>
+       </div> 
+      </fieldset>
+      
+      
+      <input type="button" id="gerar" value="Gerar senha" />
+
+    </div>
+    
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
