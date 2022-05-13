@@ -8,10 +8,10 @@
 <table>
 <tr>
   <td>
-    <img src="./screenshots/gerador.gif" alt="Imagem demonstrativa do site" width="200px" />
+    <img src="./screenshots/gerador.gif" alt="Imagem demonstrativa do site" min-width="200px"  />
   </td>
   <td>
-   <img src="./screenshots/gerador.jpg" alt="Imagem demonstrativa do site" width="250px" />
+   <img src="./screenshots/gerador.jpg" alt="Imagem demonstrativa do site" min-width="250px" />
   </td>
 </tr>
 </table>
