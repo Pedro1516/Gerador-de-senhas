@@ -82,11 +82,19 @@ label.invalido:before{
   background: rgba(80, 80, 100, .9);
 }
 
-
 .selecao-tipo{
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-bottom: 30px;
+}
+
+fieldset.invalido::before{
+  content: '❌ Selecione ao menos um tipo';
+  position: absolute;
+  bottom: -15px;
+  font-size: 10px;
+  color: red;
 }
 
 @keyframes balancar{
